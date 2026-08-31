@@ -20,7 +20,7 @@ namespace FILLONE_DSAL01E_CPE301
         public void DSAL_connString()
         {
             DSAL_sql_connection = new SqlConnection();
-            DSAL_connectionString = "Data Source=C203-16;Initial Catalog = DSAL_Db;User Id=SA;Password=B1Admin123@";
+            DSAL_connectionString = "Data Source=ALI\\SQLEXPRESS;Initial Catalog = DSAL_db;Integrated Security=True;";
             DSAL_sql_connection = new SqlConnection(DSAL_connectionString);
             DSAL_sql_connection.ConnectionString = DSAL_connectionString;
             DSAL_sql_connection.Open();
@@ -46,5 +46,10 @@ public void DSAL_cmd()
             DSAL_sql_command.ExecuteNonQuery();
         }
 
+        public void DSAL_sqldataSelect()
+        {
+            DSAL_sql_dataset = new DataSet();
+            DSAL_sql_dataadapter.Fill(DSAL_sql_dataset, "EmployeeTbl");
+        }
     }
 }
