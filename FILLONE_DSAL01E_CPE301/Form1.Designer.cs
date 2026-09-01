@@ -61,6 +61,7 @@
             this.submitbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.form2btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +93,7 @@
             // empIDtxtbox
             // 
             this.empIDtxtbox.Location = new System.Drawing.Point(161, 65);
-            this.empIDtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.empIDtxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.empIDtxtbox.Multiline = true;
             this.empIDtxtbox.Name = "empIDtxtbox";
             this.empIDtxtbox.Size = new System.Drawing.Size(141, 34);
@@ -112,7 +113,7 @@
             // firstnametxtbox
             // 
             this.firstnametxtbox.Location = new System.Drawing.Point(161, 114);
-            this.firstnametxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstnametxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.firstnametxtbox.Multiline = true;
             this.firstnametxtbox.Name = "firstnametxtbox";
             this.firstnametxtbox.Size = new System.Drawing.Size(141, 34);
@@ -123,7 +124,7 @@
             // middlenametxtbox
             // 
             this.middlenametxtbox.Location = new System.Drawing.Point(312, 114);
-            this.middlenametxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.middlenametxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.middlenametxtbox.Multiline = true;
             this.middlenametxtbox.Name = "middlenametxtbox";
             this.middlenametxtbox.Size = new System.Drawing.Size(141, 34);
@@ -134,7 +135,7 @@
             // surnametxtbox
             // 
             this.surnametxtbox.Location = new System.Drawing.Point(463, 114);
-            this.surnametxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.surnametxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.surnametxtbox.Multiline = true;
             this.surnametxtbox.Name = "surnametxtbox";
             this.surnametxtbox.Size = new System.Drawing.Size(141, 34);
@@ -145,7 +146,7 @@
             // suffixtxtbox
             // 
             this.suffixtxtbox.Location = new System.Drawing.Point(613, 114);
-            this.suffixtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.suffixtxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.suffixtxtbox.Multiline = true;
             this.suffixtxtbox.Name = "suffixtxtbox";
             this.suffixtxtbox.Size = new System.Drawing.Size(49, 34);
@@ -157,7 +158,7 @@
             // 
             this.salutationcmbbox.FormattingEnabled = true;
             this.salutationcmbbox.Location = new System.Drawing.Point(463, 66);
-            this.salutationcmbbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salutationcmbbox.Margin = new System.Windows.Forms.Padding(4);
             this.salutationcmbbox.Name = "salutationcmbbox";
             this.salutationcmbbox.Size = new System.Drawing.Size(200, 24);
             this.salutationcmbbox.TabIndex = 8;
@@ -187,7 +188,7 @@
             // streettxtbox
             // 
             this.streettxtbox.Location = new System.Drawing.Point(161, 159);
-            this.streettxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.streettxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.streettxtbox.Multiline = true;
             this.streettxtbox.Name = "streettxtbox";
             this.streettxtbox.Size = new System.Drawing.Size(501, 34);
@@ -197,7 +198,7 @@
             // brgytxtbox
             // 
             this.brgytxtbox.Location = new System.Drawing.Point(161, 201);
-            this.brgytxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.brgytxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.brgytxtbox.Multiline = true;
             this.brgytxtbox.Name = "brgytxtbox";
             this.brgytxtbox.Size = new System.Drawing.Size(141, 34);
@@ -208,7 +209,7 @@
             // citytxtbox
             // 
             this.citytxtbox.Location = new System.Drawing.Point(312, 201);
-            this.citytxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.citytxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.citytxtbox.Multiline = true;
             this.citytxtbox.Name = "citytxtbox";
             this.citytxtbox.Size = new System.Drawing.Size(141, 34);
@@ -219,18 +220,18 @@
             // provincetxtbox
             // 
             this.provincetxtbox.Location = new System.Drawing.Point(463, 201);
-            this.provincetxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.provincetxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.provincetxtbox.Multiline = true;
             this.provincetxtbox.Name = "provincetxtbox";
             this.provincetxtbox.Size = new System.Drawing.Size(141, 34);
             this.provincetxtbox.TabIndex = 14;
-            this.provincetxtbox.Text = "Province / Refion";
+            this.provincetxtbox.Text = "Province / Region";
             this.provincetxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ziptxtbox
             // 
             this.ziptxtbox.Location = new System.Drawing.Point(613, 201);
-            this.ziptxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ziptxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.ziptxtbox.Multiline = true;
             this.ziptxtbox.Name = "ziptxtbox";
             this.ziptxtbox.Size = new System.Drawing.Size(49, 34);
@@ -241,7 +242,7 @@
             // birthdaytxtbox
             // 
             this.birthdaytxtbox.Location = new System.Drawing.Point(161, 242);
-            this.birthdaytxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birthdaytxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.birthdaytxtbox.Multiline = true;
             this.birthdaytxtbox.Name = "birthdaytxtbox";
             this.birthdaytxtbox.Size = new System.Drawing.Size(501, 34);
@@ -273,7 +274,7 @@
             // nationalitytxtbox
             // 
             this.nationalitytxtbox.Location = new System.Drawing.Point(161, 284);
-            this.nationalitytxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nationalitytxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.nationalitytxtbox.Multiline = true;
             this.nationalitytxtbox.Name = "nationalitytxtbox";
             this.nationalitytxtbox.Size = new System.Drawing.Size(501, 34);
@@ -282,7 +283,7 @@
             // emailaddtxtbox
             // 
             this.emailaddtxtbox.Location = new System.Drawing.Point(161, 326);
-            this.emailaddtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailaddtxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.emailaddtxtbox.Multiline = true;
             this.emailaddtxtbox.Name = "emailaddtxtbox";
             this.emailaddtxtbox.Size = new System.Drawing.Size(245, 34);
@@ -292,7 +293,7 @@
             // mobilenotxtbox
             // 
             this.mobilenotxtbox.Location = new System.Drawing.Point(416, 326);
-            this.mobilenotxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mobilenotxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.mobilenotxtbox.Multiline = true;
             this.mobilenotxtbox.Name = "mobilenotxtbox";
             this.mobilenotxtbox.Size = new System.Drawing.Size(245, 34);
@@ -325,7 +326,7 @@
             // 
             this.jobcmbbox.FormattingEnabled = true;
             this.jobcmbbox.Location = new System.Drawing.Point(161, 373);
-            this.jobcmbbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.jobcmbbox.Margin = new System.Windows.Forms.Padding(4);
             this.jobcmbbox.Name = "jobcmbbox";
             this.jobcmbbox.Size = new System.Drawing.Size(501, 24);
             this.jobcmbbox.TabIndex = 25;
@@ -334,7 +335,7 @@
             // 
             this.deptcmbbox.FormattingEnabled = true;
             this.deptcmbbox.Location = new System.Drawing.Point(161, 406);
-            this.deptcmbbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deptcmbbox.Margin = new System.Windows.Forms.Padding(4);
             this.deptcmbbox.Name = "deptcmbbox";
             this.deptcmbbox.Size = new System.Drawing.Size(501, 24);
             this.deptcmbbox.TabIndex = 27;
@@ -354,7 +355,7 @@
             // 
             this.statuscmbbox.FormattingEnabled = true;
             this.statuscmbbox.Location = new System.Drawing.Point(161, 439);
-            this.statuscmbbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.statuscmbbox.Margin = new System.Windows.Forms.Padding(4);
             this.statuscmbbox.Name = "statuscmbbox";
             this.statuscmbbox.Size = new System.Drawing.Size(501, 24);
             this.statuscmbbox.TabIndex = 29;
@@ -374,7 +375,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(708, 65);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -386,7 +387,7 @@
             // 
             this.submitbtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.submitbtn.Location = new System.Drawing.Point(733, 247);
-            this.submitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitbtn.Margin = new System.Windows.Forms.Padding(4);
             this.submitbtn.Name = "submitbtn";
             this.submitbtn.Size = new System.Drawing.Size(132, 44);
             this.submitbtn.TabIndex = 31;
@@ -398,7 +399,7 @@
             // 
             this.exitbtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.exitbtn.Location = new System.Drawing.Point(733, 309);
-            this.exitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitbtn.Margin = new System.Windows.Forms.Padding(4);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(132, 44);
             this.exitbtn.TabIndex = 32;
@@ -410,12 +411,25 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // form2btn
+            // 
+            this.form2btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.form2btn.Location = new System.Drawing.Point(814, 443);
+            this.form2btn.Margin = new System.Windows.Forms.Padding(4);
+            this.form2btn.Name = "form2btn";
+            this.form2btn.Size = new System.Drawing.Size(90, 30);
+            this.form2btn.TabIndex = 33;
+            this.form2btn.Text = "Form 2";
+            this.form2btn.UseVisualStyleBackColor = false;
+            this.form2btn.Click += new System.EventHandler(this.form2btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(917, 486);
+            this.Controls.Add(this.form2btn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.submitbtn);
             this.Controls.Add(this.pictureBox1);
@@ -448,7 +462,7 @@
             this.Controls.Add(this.empIDtxtbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -493,6 +507,7 @@
         private System.Windows.Forms.Button submitbtn;
         private System.Windows.Forms.Button exitbtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button form2btn;
     }
 }
 

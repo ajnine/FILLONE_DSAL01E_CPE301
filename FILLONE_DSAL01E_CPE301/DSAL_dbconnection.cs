@@ -26,7 +26,7 @@ namespace FILLONE_DSAL01E_CPE301
             DSAL_sql_connection.Open();
         }
 
-public void DSAL_cmd()
+        public void DSAL_cmd()
         {   
             DSAL_sql_command = new SqlCommand(DSAL_sql, DSAL_sql_connection);
             DSAL_sql_command.CommandType = CommandType.Text;
@@ -50,6 +50,18 @@ public void DSAL_cmd()
         {
             DSAL_sql_dataset = new DataSet();
             DSAL_sql_dataadapter.Fill(DSAL_sql_dataset, "EmployeeTbl");
+        }
+
+        public void DSAL_sqladapterUpdate()
+        {
+            DSAL_sql_dataadapter = new SqlDataAdapter();
+            DSAL_sql_dataadapter.UpdateCommand = DSAL_sql_command;
+            DSAL_sql_command.ExecuteNonQuery();
+        }
+
+        public void DSAL_select()
+        {
+            DSAL_sql = "Select * From EmployeeTbl";
         }
     }
 }

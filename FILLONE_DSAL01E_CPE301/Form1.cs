@@ -77,5 +77,10 @@ namespace FILLONE_DSAL01E_CPE301
             openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
             openFileDialog1.ShowDialog();
         }
+
+        private void form2btn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
