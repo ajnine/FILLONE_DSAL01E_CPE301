@@ -24,11 +24,61 @@ namespace FILLONE_DSAL01E_CPE301
 
         private void searchBTN_Click(object sender, EventArgs e)
         {
-            DSAL_dbconnect.DSAL_sql = "SELECT * FROM EmployeeTbl WHERE emp_id = '" + emp_id_cmbbox.Text + "'";
+            DSAL_dbconnect.DSAL_sql = "SELECT * FROM EmployeeTbl WHERE emp_id = '" + searchtxtbox.Text + "'";
             DSAL_dbconnect.DSAL_cmd();
             DSAL_dbconnect.DSAL_sqladapterSelect();
 
-            datagriddisplay.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
+            dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+
+            
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            DSAL_dbconnect.DSAL_sql = "SELECT * FROM EmployeeTbl";
+            DSAL_dbconnect.DSAL_cmd();
+            DSAL_dbconnect.DSAL_sqladapterSelect();
+
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
+            dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+
+        }
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0) 
+            {
+                var cellvalue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                if (e.ColumnIndex == 0)
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                }
+            }
+
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+            string id = row.Cells["emp_id"].Value?.ToString() ?? "";
+            string fname = row.Cells["emp_fname"].Value?.ToString() ?? "";
+            string mname = row.Cells["emp_sname"].Value?.ToString() ?? "";
+
+            Form2 popupForm = new Form2(id, fname, mname);
+
+            popupForm.ShowDialog();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                var cellvalue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                if (e.ColumnIndex == 0)
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                }
+            }
         }
     }
 }

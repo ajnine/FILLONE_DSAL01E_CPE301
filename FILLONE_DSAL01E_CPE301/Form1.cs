@@ -28,22 +28,31 @@ namespace FILLONE_DSAL01E_CPE301
             salutationcmbbox.Items.Add("Mr.");
             salutationcmbbox.Items.Add("Ms.");
             salutationcmbbox.Items.Add("Mrs.");
+            salutationcmbbox.Items.Add("Engr.");
+            salutationcmbbox.Items.Add("Dr.");
+            salutationcmbbox.Items.Add("Ar.");
 
             jobcmbbox.Items.Add("Engineer");
             jobcmbbox.Items.Add("Teacher");
             jobcmbbox.Items.Add("Accountant");
             jobcmbbox.Items.Add("Lawyer");
             jobcmbbox.Items.Add("Flight Attendant");
+            jobcmbbox.Items.Add("Doctor");
+            jobcmbbox.Items.Add("Architect");
+
 
             deptcmbbox.Items.Add("Department of Engineering");
             deptcmbbox.Items.Add("Department of Accountancy");
             deptcmbbox.Items.Add("Department of Education");
             deptcmbbox.Items.Add("Department of Law");
             deptcmbbox.Items.Add("Department of Tourism and Hotel Management");
+            deptcmbbox.Items.Add("Department of Nursing");
+            deptcmbbox.Items.Add("Department of Architecture");
 
             statuscmbbox.Items.Add("Regular");
             statuscmbbox.Items.Add("Part-time");
             statuscmbbox.Items.Add("OJT");
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,7 +89,10 @@ namespace FILLONE_DSAL01E_CPE301
 
         private void form2btn_Click(object sender, EventArgs e)
         {
-            
+            // for calling connected to the current form
+            Form3 form = new Form3();
+            // to display the other form
+            form.Show();
         }
     }
 }

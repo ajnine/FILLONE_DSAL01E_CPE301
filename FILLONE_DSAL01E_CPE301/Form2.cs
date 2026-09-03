@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace FILLONE_DSAL01E_CPE301
 {
@@ -22,27 +23,64 @@ namespace FILLONE_DSAL01E_CPE301
             InitializeComponent();
         }
 
+        public Form2(string id, string fname, string mname)
+        {
+            InitializeComponent();
+
+            // Assign the passed data to your textboxes
+            empIDtxtbox.Text = id;
+            firstnametxtbox.Text = fname;
+            middlenametxtbox.Text = mname;
+        }
+
         private void Form2_Load(object sender, EventArgs e)
         {
+            
+            
             salutationcmbbox.Items.Add("Mr.");
             salutationcmbbox.Items.Add("Ms.");
             salutationcmbbox.Items.Add("Mrs.");
+            salutationcmbbox.Items.Add("Engr.");
+            salutationcmbbox.Items.Add("Dr.");
+            salutationcmbbox.Items.Add("Ar.");
 
             jobcmbbox.Items.Add("Engineer");
             jobcmbbox.Items.Add("Teacher");
             jobcmbbox.Items.Add("Accountant");
             jobcmbbox.Items.Add("Lawyer");
             jobcmbbox.Items.Add("Flight Attendant");
+            jobcmbbox.Items.Add("Doctor");
+            jobcmbbox.Items.Add("Architect");
+
 
             deptcmbbox.Items.Add("Department of Engineering");
             deptcmbbox.Items.Add("Department of Accountancy");
             deptcmbbox.Items.Add("Department of Education");
             deptcmbbox.Items.Add("Department of Law");
             deptcmbbox.Items.Add("Department of Tourism and Hotel Management");
+            deptcmbbox.Items.Add("Department of Nursing");
+            deptcmbbox.Items.Add("Department of Architecture");
 
             statuscmbbox.Items.Add("Regular");
             statuscmbbox.Items.Add("Part-time");
             statuscmbbox.Items.Add("OJT");
+
+
+            DSAL_dbconnect.DSAL_sql = "SELECT * FROM EmployeeTbl where emp_id = '" + empIDtxtbox.Text +"'";
+            DSAL_dbconnect.DSAL_cmd();
+            DSAL_dbconnect.DSAL_sqladapterSelect();
+
+
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
+            dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+            //firstnametxtbox.Text = DSAL_dbconnect.DSAL_sql_dataset.Tables[0].Rows[0][3].ToString();
+
+            DSAL_dbconnect.DSAL_sql = "SELECT * FROM EmployeeTbl";
+            DSAL_dbconnect.DSAL_cmd();
+            DSAL_dbconnect.DSAL_sqladapterSelect();
+
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
+            dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
         }
 
         private void submitbtn_Click(object sender, EventArgs e)
@@ -72,15 +110,26 @@ namespace FILLONE_DSAL01E_CPE301
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
-            DSAL_dbconnect.DSAL_sql = "UPDATE EmployeeTbl SET emp_salutation = '" + empIDtxtbox.Text + "', emp_fname = '" + firstnametxtbox.Text + "', emp_mname = '" + middlenametxtbox.Text + "', emp_sname = '" + surnametxtbox.Text + "', emp_suffix= '" + suffixtxtbox.Text + "', emp_street = '" + streettxtbox.Text + "', emp_brgy= '" + brgytxtbox.Text + "', emp_city = '" + citytxtbox.Text + "', emp_province = '" + provincetxtbox.Text + "', emp_zip = '" + ziptxtbox.Text + "', emp_bday = '" + birthdaytxtbox.Text + "', emp_nationality = '" + nationalitytxtbox.Text + "', emp_emailadd = '" + emailaddtxtbox.Text + "', emp_telephone = '" + mobilenotxtbox.Text + "', emp_job = '" + jobcmbbox.Text + "', emp_dept = '" + deptcmbbox.Text + "', emp_status = '" + statuscmbbox.Text + "'";
+            DSAL_dbconnect.DSAL_sql = "UPDATE EmployeeTbl SET emp_salutation = '" + salutationcmbbox.Text + "', emp_fname = '" + firstnametxtbox.Text + "', emp_mname = '" + middlenametxtbox.Text + "', emp_sname = '" + surnametxtbox.Text + "', emp_suffix= '" + suffixtxtbox.Text + "', emp_street = '" + streettxtbox.Text + "', emp_brgy= '" + brgytxtbox.Text + "', emp_city = '" + citytxtbox.Text + "', emp_province = '" + provincetxtbox.Text + "', emp_zip = '" + ziptxtbox.Text + "', emp_bday = '" + birthdaytxtbox.Text + "', emp_nationality = '" + nationalitytxtbox.Text + "', emp_emailadd = '" + emailaddtxtbox.Text + "', emp_telephone = '" + mobilenotxtbox.Text + "', emp_job = '" + jobcmbbox.Text + "', emp_dept = '" + deptcmbbox.Text + "', emp_status = '" + statuscmbbox.Text + "' WHERE emp_id = '" + empIDtxtbox.Text + "' ";
             DSAL_dbconnect.DSAL_cmd();
             DSAL_dbconnect.DSAL_sqladapterUpdate();
 
             DSAL_dbconnect.DSAL_select();
             DSAL_dbconnect.DSAL_cmd();
             DSAL_dbconnect.DSAL_sqladapterSelect();
-            DSAL_dbconnect.DSAL_sqldataSelect();
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
             datagriddisplay.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DSAL_dbconnect.DSAL_sqldatasetSelect();
+            dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
         }
     }
 }

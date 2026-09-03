@@ -61,7 +61,7 @@
             this.submitbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.form2btn = new System.Windows.Forms.Button();
+            this.form3btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -411,17 +411,17 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // form2btn
+            // form3btn
             // 
-            this.form2btn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.form2btn.Location = new System.Drawing.Point(814, 443);
-            this.form2btn.Margin = new System.Windows.Forms.Padding(4);
-            this.form2btn.Name = "form2btn";
-            this.form2btn.Size = new System.Drawing.Size(90, 30);
-            this.form2btn.TabIndex = 33;
-            this.form2btn.Text = "Form 2";
-            this.form2btn.UseVisualStyleBackColor = false;
-            this.form2btn.Click += new System.EventHandler(this.form2btn_Click);
+            this.form3btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.form3btn.Location = new System.Drawing.Point(814, 443);
+            this.form3btn.Margin = new System.Windows.Forms.Padding(4);
+            this.form3btn.Name = "form3btn";
+            this.form3btn.Size = new System.Drawing.Size(90, 30);
+            this.form3btn.TabIndex = 33;
+            this.form3btn.Text = "Form 3";
+            this.form3btn.UseVisualStyleBackColor = false;
+            this.form3btn.Click += new System.EventHandler(this.form2btn_Click);
             // 
             // Form1
             // 
@@ -429,7 +429,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(917, 486);
-            this.Controls.Add(this.form2btn);
+            this.Controls.Add(this.form3btn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.submitbtn);
             this.Controls.Add(this.pictureBox1);
@@ -507,7 +507,7 @@
         private System.Windows.Forms.Button submitbtn;
         private System.Windows.Forms.Button exitbtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button form2btn;
+        private System.Windows.Forms.Button form3btn;
     }
 }
 

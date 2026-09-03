@@ -29,22 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.emp_id_cmbbox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.searchBTN = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.searchtxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // emp_id_cmbbox
-            // 
-            this.emp_id_cmbbox.FormattingEnabled = true;
-            this.emp_id_cmbbox.ItemHeight = 16;
-            this.emp_id_cmbbox.Location = new System.Drawing.Point(23, 29);
-            this.emp_id_cmbbox.Name = "emp_id_cmbbox";
-            this.emp_id_cmbbox.Size = new System.Drawing.Size(232, 24);
-            this.emp_id_cmbbox.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -55,6 +46,8 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(938, 419);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // searchBTN
             // 
@@ -84,18 +77,27 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Employee ID";
             // 
+            // searchtxtbox
+            // 
+            this.searchtxtbox.Location = new System.Drawing.Point(23, 23);
+            this.searchtxtbox.Multiline = true;
+            this.searchtxtbox.Name = "searchtxtbox";
+            this.searchtxtbox.Size = new System.Drawing.Size(227, 34);
+            this.searchtxtbox.TabIndex = 6;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(973, 528);
+            this.Controls.Add(this.searchtxtbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.searchBTN);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.emp_id_cmbbox);
             this.Name = "Form3";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,11 +105,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox emp_id_cmbbox;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button searchBTN;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox searchtxtbox;
     }
 }

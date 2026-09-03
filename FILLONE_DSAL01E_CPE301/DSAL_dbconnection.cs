@@ -46,7 +46,7 @@ namespace FILLONE_DSAL01E_CPE301
             DSAL_sql_command.ExecuteNonQuery();
         }
 
-        public void DSAL_sqldataSelect()
+        public void DSAL_sqldatasetSelect()
         {
             DSAL_sql_dataset = new DataSet();
             DSAL_sql_dataadapter.Fill(DSAL_sql_dataset, "EmployeeTbl");
