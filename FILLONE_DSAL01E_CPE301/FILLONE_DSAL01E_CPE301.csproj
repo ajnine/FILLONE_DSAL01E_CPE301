@@ -47,6 +47,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DSAL_dbconnection.cs" />
+    <Compile Include="ex3_sequential_search_algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex3_sequential_search_algorithm.Designer.cs">
+      <DependentUpon>ex3_sequential_search_algorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex5_sequential_search_algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex5_sequential_search_algorithm.Designer.cs">
+      <DependentUpon>ex5_sequential_search_algorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex6_sequential_search_algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex6_sequential_search_algorithm.Designer.cs">
+      <DependentUpon>ex6_sequential_search_algorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex7_sequential_search_algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex7_sequential_search_algorithm.Designer.cs">
+      <DependentUpon>ex7_sequential_search_algorithm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,12 +91,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz1.Designer.cs">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </Compile>
     <Compile Include="samplefrm_connectedDb.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="samplefrm_connectedDb.Designer.cs">
       <DependentUpon>samplefrm_connectedDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex1_sequential_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex1_sequential_search.Designer.cs">
+      <DependentUpon>ex1_sequential_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex2_sequential_search_algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex2_sequential_search_algorithm.Designer.cs">
+      <DependentUpon>ex2_sequential_search_algorithm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ex3_sequential_search_algorithm.resx">
+      <DependentUpon>ex3_sequential_search_algorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex5_sequential_search_algorithm.resx">
+      <DependentUpon>ex5_sequential_search_algorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex6_sequential_search_algorithm.resx">
+      <DependentUpon>ex6_sequential_search_algorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex7_sequential_search_algorithm.resx">
+      <DependentUpon>ex7_sequential_search_algorithm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,8 +145,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quiz1.resx">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="samplefrm_connectedDb.resx">
       <DependentUpon>samplefrm_connectedDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex1_sequential_search.resx">
+      <DependentUpon>ex1_sequential_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex2_sequential_search_algorithm.resx">
+      <DependentUpon>ex2_sequential_search_algorithm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
