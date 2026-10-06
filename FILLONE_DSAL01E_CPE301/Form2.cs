@@ -13,6 +13,7 @@ namespace FILLONE_DSAL01E_CPE301
 {
     public partial class Form2 : Form
     {
+
         DSAL_dbconnection DSAL_dbconnect = new DSAL_dbconnection();
         private string picpath;
         private Image pic;
@@ -31,6 +32,12 @@ namespace FILLONE_DSAL01E_CPE301
             empIDtxtbox.Text = id;
             firstnametxtbox.Text = fname;
             middlenametxtbox.Text = mname;
+        }
+        public void show_info(int i) 
+        {
+            
+
+            //MessageBox.Show("The number is: " + i);
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -130,6 +137,11 @@ namespace FILLONE_DSAL01E_CPE301
         {
             DSAL_dbconnect.DSAL_sqldatasetSelect();
             dataGridView1.DataSource = DSAL_dbconnect.DSAL_sql_dataset.Tables[0];
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

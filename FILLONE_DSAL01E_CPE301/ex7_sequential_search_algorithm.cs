@@ -44,10 +44,10 @@ namespace FILLONE_DSAL01E_CPE301
                 if (name.Equals(target, StringComparison.OrdinalIgnoreCase))
                 {
                     MessageBox.Show(
-                        "Student fount at record " + (i + 1));
+                        "Student found at record " + (i + 1));
 
                     found = true;
-                    break;
+                    break; 
                 }
             }
 

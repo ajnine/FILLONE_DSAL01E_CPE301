@@ -16,7 +16,7 @@ namespace FILLONE_DSAL01E_CPE301
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ex7_sequential_search_algorithm());
+            Application.Run(new Form3());
         }
     }
 }
