@@ -178,10 +178,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(158, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 16);
+            this.label6.Size = new System.Drawing.Size(180, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "SERVICE INFORMATION";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -199,16 +199,18 @@
             // 
             // contract_accnumTXTBOX
             // 
+            this.contract_accnumTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contract_accnumTXTBOX.Location = new System.Drawing.Point(221, 205);
             this.contract_accnumTXTBOX.Name = "contract_accnumTXTBOX";
-            this.contract_accnumTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.contract_accnumTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.contract_accnumTXTBOX.TabIndex = 8;
             // 
             // accnameTXTBOX
             // 
+            this.accnameTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.accnameTXTBOX.Location = new System.Drawing.Point(221, 227);
             this.accnameTXTBOX.Name = "accnameTXTBOX";
-            this.accnameTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.accnameTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.accnameTXTBOX.TabIndex = 10;
             // 
             // label8
@@ -224,9 +226,10 @@
             // 
             // tinTXTBOX
             // 
+            this.tinTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tinTXTBOX.Location = new System.Drawing.Point(221, 271);
             this.tinTXTBOX.Name = "tinTXTBOX";
-            this.tinTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.tinTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.tinTXTBOX.TabIndex = 14;
             // 
             // label9
@@ -242,9 +245,10 @@
             // 
             // service_addressTXTBOX
             // 
+            this.service_addressTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.service_addressTXTBOX.Location = new System.Drawing.Point(221, 249);
             this.service_addressTXTBOX.Name = "service_addressTXTBOX";
-            this.service_addressTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.service_addressTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.service_addressTXTBOX.TabIndex = 12;
             // 
             // label10
@@ -260,9 +264,10 @@
             // 
             // business_areaTXTBOX
             // 
+            this.business_areaTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.business_areaTXTBOX.Location = new System.Drawing.Point(221, 314);
             this.business_areaTXTBOX.Name = "business_areaTXTBOX";
-            this.business_areaTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.business_areaTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.business_areaTXTBOX.TabIndex = 18;
             // 
             // label11
@@ -278,9 +283,10 @@
             // 
             // rate_classTXTBOX
             // 
+            this.rate_classTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rate_classTXTBOX.Location = new System.Drawing.Point(221, 293);
             this.rate_classTXTBOX.Name = "rate_classTXTBOX";
-            this.rate_classTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.rate_classTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.rate_classTXTBOX.TabIndex = 16;
             // 
             // label12
@@ -309,10 +315,10 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(158, 347);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(174, 16);
+            this.label20.Size = new System.Drawing.Size(194, 16);
             this.label20.TabIndex = 20;
             this.label20.Text = "METERING INFORMATION";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -330,23 +336,26 @@
             // 
             // meter_noTXTBOX
             // 
+            this.meter_noTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.meter_noTXTBOX.Location = new System.Drawing.Point(69, 380);
             this.meter_noTXTBOX.Name = "meter_noTXTBOX";
-            this.meter_noTXTBOX.Size = new System.Drawing.Size(117, 20);
+            this.meter_noTXTBOX.Size = new System.Drawing.Size(117, 13);
             this.meter_noTXTBOX.TabIndex = 22;
             // 
             // seq_noTXTBOX
             // 
+            this.seq_noTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.seq_noTXTBOX.Location = new System.Drawing.Point(322, 380);
             this.seq_noTXTBOX.Name = "seq_noTXTBOX";
-            this.seq_noTXTBOX.Size = new System.Drawing.Size(117, 20);
+            this.seq_noTXTBOX.Size = new System.Drawing.Size(117, 13);
             this.seq_noTXTBOX.TabIndex = 23;
             // 
             // MRU_noTXTBOX
             // 
+            this.MRU_noTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MRU_noTXTBOX.Location = new System.Drawing.Point(197, 380);
             this.MRU_noTXTBOX.Name = "MRU_noTXTBOX";
-            this.MRU_noTXTBOX.Size = new System.Drawing.Size(117, 20);
+            this.MRU_noTXTBOX.Size = new System.Drawing.Size(117, 13);
             this.MRU_noTXTBOX.TabIndex = 24;
             // 
             // label15
@@ -373,9 +382,10 @@
             // 
             // consumpTXTBOX
             // 
+            this.consumpTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.consumpTXTBOX.Location = new System.Drawing.Point(221, 467);
             this.consumpTXTBOX.Name = "consumpTXTBOX";
-            this.consumpTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.consumpTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.consumpTXTBOX.TabIndex = 34;
             // 
             // label17
@@ -391,9 +401,10 @@
             // 
             // previousreadingTXTBOX
             // 
+            this.previousreadingTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.previousreadingTXTBOX.Location = new System.Drawing.Point(221, 445);
             this.previousreadingTXTBOX.Name = "previousreadingTXTBOX";
-            this.previousreadingTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.previousreadingTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.previousreadingTXTBOX.TabIndex = 32;
             // 
             // label18
@@ -409,9 +420,10 @@
             // 
             // presentreadingTXTBOX
             // 
+            this.presentreadingTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.presentreadingTXTBOX.Location = new System.Drawing.Point(221, 423);
             this.presentreadingTXTBOX.Name = "presentreadingTXTBOX";
-            this.presentreadingTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.presentreadingTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.presentreadingTXTBOX.TabIndex = 30;
             // 
             // label19
@@ -427,9 +439,10 @@
             // 
             // readingdateTXTBOX
             // 
+            this.readingdateTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.readingdateTXTBOX.Location = new System.Drawing.Point(221, 402);
             this.readingdateTXTBOX.Name = "readingdateTXTBOX";
-            this.readingdateTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.readingdateTXTBOX.Size = new System.Drawing.Size(218, 13);
             this.readingdateTXTBOX.TabIndex = 28;
             // 
             // label21
@@ -469,10 +482,10 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(143, 516);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(197, 16);
+            this.label24.Size = new System.Drawing.Size(221, 16);
             this.label24.TabIndex = 37;
             this.label24.Text = "BILL AND PAYMENT HISTORY";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -536,10 +549,10 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(154, 580);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(128, 16);
+            this.label30.Size = new System.Drawing.Size(143, 16);
             this.label30.TabIndex = 44;
             this.label30.Text = "BILLING SUMMARY";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -558,9 +571,10 @@
             // 
             // billingdateTXTBOX
             // 
+            this.billingdateTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.billingdateTXTBOX.Location = new System.Drawing.Point(173, 599);
             this.billingdateTXTBOX.Name = "billingdateTXTBOX";
-            this.billingdateTXTBOX.Size = new System.Drawing.Size(109, 20);
+            this.billingdateTXTBOX.Size = new System.Drawing.Size(109, 13);
             this.billingdateTXTBOX.TabIndex = 46;
             // 
             // label32
@@ -576,9 +590,10 @@
             // 
             // billing_readingdateTXTBOX
             // 
+            this.billing_readingdateTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.billing_readingdateTXTBOX.Location = new System.Drawing.Point(326, 600);
             this.billing_readingdateTXTBOX.Name = "billing_readingdateTXTBOX";
-            this.billing_readingdateTXTBOX.Size = new System.Drawing.Size(109, 20);
+            this.billing_readingdateTXTBOX.Size = new System.Drawing.Size(109, 13);
             this.billing_readingdateTXTBOX.TabIndex = 47;
             // 
             // label33
@@ -594,9 +609,10 @@
             // 
             // currentchargesTXTBOX
             // 
-            this.currentchargesTXTBOX.Location = new System.Drawing.Point(217, 622);
+            this.currentchargesTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.currentchargesTXTBOX.Location = new System.Drawing.Point(237, 622);
             this.currentchargesTXTBOX.Name = "currentchargesTXTBOX";
-            this.currentchargesTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.currentchargesTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.currentchargesTXTBOX.TabIndex = 50;
             // 
             // label34
@@ -612,9 +628,10 @@
             // 
             // basicchargeTXTBOX
             // 
-            this.basicchargeTXTBOX.Location = new System.Drawing.Point(217, 643);
+            this.basicchargeTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.basicchargeTXTBOX.Location = new System.Drawing.Point(237, 643);
             this.basicchargeTXTBOX.Name = "basicchargeTXTBOX";
-            this.basicchargeTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.basicchargeTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.basicchargeTXTBOX.TabIndex = 52;
             // 
             // label35
@@ -630,9 +647,10 @@
             // 
             // envichargesTXTBOX
             // 
-            this.envichargesTXTBOX.Location = new System.Drawing.Point(217, 664);
+            this.envichargesTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.envichargesTXTBOX.Location = new System.Drawing.Point(237, 664);
             this.envichargesTXTBOX.Name = "envichargesTXTBOX";
-            this.envichargesTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.envichargesTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.envichargesTXTBOX.TabIndex = 54;
             // 
             // label36
@@ -648,9 +666,10 @@
             // 
             // tot_currentchargesTXTBOX
             // 
-            this.tot_currentchargesTXTBOX.Location = new System.Drawing.Point(217, 706);
+            this.tot_currentchargesTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tot_currentchargesTXTBOX.Location = new System.Drawing.Point(237, 706);
             this.tot_currentchargesTXTBOX.Name = "tot_currentchargesTXTBOX";
-            this.tot_currentchargesTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.tot_currentchargesTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.tot_currentchargesTXTBOX.TabIndex = 58;
             // 
             // label37
@@ -666,9 +685,10 @@
             // 
             // maintenanceTXTBOX
             // 
-            this.maintenanceTXTBOX.Location = new System.Drawing.Point(217, 685);
+            this.maintenanceTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maintenanceTXTBOX.Location = new System.Drawing.Point(237, 685);
             this.maintenanceTXTBOX.Name = "maintenanceTXTBOX";
-            this.maintenanceTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.maintenanceTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.maintenanceTXTBOX.TabIndex = 56;
             // 
             // label38
@@ -684,9 +704,10 @@
             // 
             // govern_taxesTXTBOX
             // 
-            this.govern_taxesTXTBOX.Location = new System.Drawing.Point(217, 728);
+            this.govern_taxesTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.govern_taxesTXTBOX.Location = new System.Drawing.Point(237, 728);
             this.govern_taxesTXTBOX.Name = "govern_taxesTXTBOX";
-            this.govern_taxesTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.govern_taxesTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.govern_taxesTXTBOX.TabIndex = 60;
             // 
             // label39
@@ -714,9 +735,10 @@
             // 
             // tot_amntdueTXTBOX
             // 
-            this.tot_amntdueTXTBOX.Location = new System.Drawing.Point(217, 767);
+            this.tot_amntdueTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tot_amntdueTXTBOX.Location = new System.Drawing.Point(237, 767);
             this.tot_amntdueTXTBOX.Name = "tot_amntdueTXTBOX";
-            this.tot_amntdueTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.tot_amntdueTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.tot_amntdueTXTBOX.TabIndex = 63;
             // 
             // label40
@@ -732,9 +754,10 @@
             // 
             // payment_duedateTXTBOX
             // 
-            this.payment_duedateTXTBOX.Location = new System.Drawing.Point(217, 789);
+            this.payment_duedateTXTBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.payment_duedateTXTBOX.Location = new System.Drawing.Point(237, 789);
             this.payment_duedateTXTBOX.Name = "payment_duedateTXTBOX";
-            this.payment_duedateTXTBOX.Size = new System.Drawing.Size(218, 20);
+            this.payment_duedateTXTBOX.Size = new System.Drawing.Size(198, 13);
             this.payment_duedateTXTBOX.TabIndex = 65;
             // 
             // label42
@@ -751,7 +774,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 818);
+            this.dataGridView2.Location = new System.Drawing.Point(17, 813);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(476, 150);
             this.dataGridView2.TabIndex = 67;
@@ -829,6 +852,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(508, 1037);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.quicksortBTN);

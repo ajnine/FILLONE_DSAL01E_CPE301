@@ -16,7 +16,7 @@ namespace FILLONE_DSAL01E_CPE301
             rate_cu_meter = 23.52,
             cu_m = 0.00,
             basic_charge = 0.00,
-            envi_charges = 108.23,
+            envi_charges = 108.28,
             maintenance_charge = 1.53,
             tot_charges_before_taxes = 0.00,
             gov_taxes = 0.00,
@@ -42,9 +42,6 @@ namespace FILLONE_DSAL01E_CPE301
             // billing period - last date
             billing_readingdateTXTBOX.Text = readingdateTXTBOX.Text;
 
-            // current charges
-            tot_amntdueTXTBOX.Text = currentchargesTXTBOX.Text;
-
             // basic charges
             cu_m = Convert.ToInt32(consumpTXTBOX.Text);
             basic_charge= cu_m * rate_cu_meter;
@@ -61,6 +58,9 @@ namespace FILLONE_DSAL01E_CPE301
             // total amount due
             tot_amnt_due = tot_charges_before_taxes + gov_taxes;
             tot_amntdueTXTBOX.Text = tot_amnt_due.ToString("");
+
+            // current charges
+            tot_amntdueTXTBOX.Text = currentchargesTXTBOX.Text;
 
             // environmental charges
             envichargesTXTBOX.Text = envi_charges.ToString("");
